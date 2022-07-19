@@ -1,0 +1,293 @@
+<style>
+
+@media screen and (max-width: 600px) {
+    .madrasa-responsive-table table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .madrasa-responsive-table table tr {
+    display: block;
+  }
+  
+  .madrasa-responsive-table table td {
+    border:none!important;
+    display: block;
+    text-align: right;
+    padding:5px!important;
+    margin:0!important;
+  }
+
+  .madrasa-responsive-table table td:first-child {
+    font-weight: bold;
+    margin:20px 0!important;
+  }
+  
+  .madrasa-responsive-table table td::before {
+    content: attr(data-label) ": ";
+  
+  }
+
+  .madrasa-responsive-table table td:first-child::before {
+    content: attr(data-label);
+  
+  }
+}
+
+.madrasa-course-content table { 
+  border-spacing: 1; 
+  border-collapse: collapse; 
+  background:white;
+  border-radius:6px;
+  overflow:hidden;
+  max-width:800px; 
+  width:100%;
+  margin:0 auto;
+  position:relative;
+  table-layout: auto !important;
+}
+
+.madrasa-course-content h2 {
+    font-size: 22px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #244080;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.madrasa-course-content p,
+.madrasa-course-content ul {
+    margin: 0;
+}
+
+.madrasa-course-content p,
+.madrasa-course-content li,
+.madrasa-course-content {
+    font-size: 20px;
+}
+
+.madrasa-course-content hr {
+    border-top: 1px solid lightgray;
+    max-width: 350px;
+    margin-right: 0;
+}
+
+@font-face {
+    font-family: "Abraham-light";
+    src: url("font/AbrahamTRIAL-Light.otf");
+}
+
+@font-face {
+    font-family: "Abraham";
+    src: url("font/AbrahamTRIAL-Regular.otf");
+}
+
+.madrasa-course-content h2 {
+    font-family: "Abraham";
+}
+
+.madrasa-course-content p,
+.madrasa-course-content li,
+.madrasa-course-content {
+    font-family: "Abraham-light";
+}
+
+@media only screen and (min-width:500px) {
+    .madrasa-course-content img {
+        float: left;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .madrasa-course-content h2 {
+        text-align: center;
+
+    }
+
+    .madrasa-course-content img {
+        display: block;
+        margin: auto;
+    }
+}
+</style>
+<div class="madrasa-responsive-table">
+    <div class="madrasa-course-content remember" style="clear:both">
+    <img src="https://madrasa-images.s3.eu-west-2.amazonaws.com/new-designs/remember.png" alt="remember"
+        width="160">
+    <h2 style="font-size:30px;font-weight:bold;color:#244080;margin-right:0;margin-bottom:20px">
+חשוב לזכור!
+    </h2>
+    <p>
+סיכום כינויי המושא
+    </p>
+    </div>
+
+    <table dir="rtl">
+        <thead>
+            <tr>
+                <th>
+    
+                </th>
+                <th>
+                    כינוי מושא
+                </th>
+                <th>
+                    דוגמא
+                </th>
+                <th>
+                    כינוי מושא אחרי תנועה ארוכה
+                </th>
+                <th>
+                    דוגמא
+                </th>
+            </tr>
+            <thead>
+            <tbody>
+                <tr>
+                    <td>
+                        אותי
+                    </td>
+                    <td data-label="כינוי מושא">
+                        -ני
+                    </td>
+                    <td data-label="דוגמא">
+                        בִּ(י)זוּרְנִי - הוא מבקר אותי
+                    </td>
+                    <td data-label="כינוי מושא אחרי תנועה ארוכה">
+                        -נִי
+                    </td>
+                    <td data-label="דוגמא">
+                        בִּ(י)זוּרוּנִי - הם מבקרים אותי
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        אותךָ
+                    </td>
+                    <td data-label="כינוי מושא">
+                        -ַכּ
+                    </td>
+                    <td data-label="דוגמא">
+                        בִּ(י)זוּרַכּ - הוא מבקר אותךָ
+                    </td>
+                    <td data-label="כינוי מושא אחרי תנועה ארוכה">
+                        -כּ
+                    </td>
+                    <td data-label="דוגמא">
+                        בִּ(י)זוּרוּכּ - הם מבקרים אותךָ
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        אותךְ
+                    </td>
+                    <td data-label="כינוי מושא">
+                        -ֵכּ
+                    </td>
+                    <td data-label="דוגמא">
+                        בִּ(י)זוּרֵכּ - הוא מבקר אותךְ
+                    </td>
+                    <td data-label="כינוי מושא אחרי תנועה ארוכה">
+                        -כִּי
+                    </td>
+                    <td data-label="דוגמא">
+                        בִּ(י)זוּרוּכִּי - הם מבקרים אותךְ
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        אותו
+                    </td>
+                    <td data-label="כינוי מושא">
+                        -ֹו
+                    </td>
+                    <td data-label="דוגמא">
+                        בִּ(י)זוּרוֹ - הוא מבקר אותו
+                    </td>
+                    <td data-label="כינוי מושא אחרי תנועה ארוכה">
+                        -הְ
+                    </td>
+                    <td data-label="דוגמא">
+                        בִּ(י)זוּרוּהְ - הם מבקרים אותו
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        אותה
+                    </td>
+                    <td data-label="כינוי מושא">
+                        -הַא
+                    </td>
+                    <td data-label="דוגמא">
+                        בִּ(י)זוּרְהַא - הוא מבקר אותה
+                    </td>
+                    <td data-label="כינוי מושא אחרי תנועה ארוכה">
+                        -הַא
+                    </td>
+                    <td data-label="דוגמא">
+                        בִּ(י)זוּרוּהַא - הם מבקרים אותה
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        אותנו
+                    </td>
+                    <td data-label="כינוי מושא">
+                        -נַא
+                    </td>
+                    <td data-label="דוגמא">
+                        בִּ(י)זוּרְנַא - הוא מבקר אותנו
+                    </td>
+                    <td data-label="כינוי מושא אחרי תנועה ארוכה">
+                        -נַא
+                    </td>
+                    <td data-label="דוגמא">
+                        בִּ(י)זוּרוּנַא - הם מבקרים אותנו
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        אתכם
+                    </td>
+                    <td data-label="כינוי מושא">
+                        -כֹּם
+                    </td>
+                    <td data-label="דוגמא">
+                        בִּ(י)זוּרְכֹּם - הוא מבקר אתכם
+                    </td>
+                    <td data-label="כינוי מושא אחרי תנועה ארוכה">
+                        -כֹּם
+                    </td>
+                    <td data-label="דוגמא">
+                        בִּ(י)זוּרוּכֹּם - הם מבקרים אתכם
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        אותם
+                    </td>
+                    <td data-label="כינוי מושא">
+                        -הֹם
+                    </td>
+                    <td data-label="דוגמא">
+                        בִּ(י)זוּרְהֹם - הוא מבקר אותם
+                    </td>
+                    <td data-label="כינוי מושא אחרי תנועה ארוכה">
+                        -הֹם
+                    </td>
+                    <td data-label="דוגמא">
+                        בִּ(י)זוּרוּהֹם - הם מבקרים אותם
+                    </td>
+                </tr>
+            </tbody>
+    </table>
+    
+</div>

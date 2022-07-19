@@ -1,0 +1,153 @@
+<style>
+.practice i {
+  font-family: "FontAwesome" !important;
+  font-style: normal !important;
+}
+.playButton {
+  background: 0 0;
+  cursor: pointer;
+  border: none;
+  padding: 0px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.audio-icon {
+  font-size: 28px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.slow {
+  color: #283d6c;
+}
+.regular {
+  color: #5d82d9;
+}
+.madrasa-course-content h2 {
+  font-size: 22px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #244080;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+.madrasa-course-content p {
+  font-size: 20px;
+}
+.madrasa-course-content span {
+  font-size: 20px;
+}
+@font-face {
+  font-family: "Abraham-light";
+  src: url("font/AbrahamTRIAL-Light.otf");
+}
+@font-face {
+  font-family: "Abraham";
+  src: url("font/AbrahamTRIAL-Regular.otf");
+}
+.madrasa-course-content h2 {
+  font-family: "Abraham";
+}
+.madrasa-course-content p {
+  font-family: "Abraham-light";
+}
+@media only screen and (min-width: 500px) {
+  .madrasa-course-content img {
+    float: left;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .madrasa-course-content h2 {
+    text-align: center;
+  }
+  .madrasa-course-content img {
+    display: block;
+    margin: auto;
+  }
+  .audio-container{
+      display:flex;
+      flex-wrap:wrap;
+  }
+  .audio-container > span{
+      width:50%;
+  }
+}
+</style>
+<div class="madrasa-course-content practice" style="clear: both">
+  <img
+    src="https://madrasa-images.s3.eu-west-2.amazonaws.com/new-designs/practice.png"
+    alt="learnmore"
+    width="160"
+  />
+  <h2
+    style="
+      font-size: 30px;
+      font-weight: bold;
+      color: #244080;
+      margin-right: 0;
+      margin-bottom: 20px;
+    ">
+תרגלו הגייה!
+  </h2>
+  <p>
+הקשיבו ושימו לב להבדל בין ח ל-ח'. חזרו בעצמכם על המילים ונסו להגות אותן
+במדויק ככל הניתן.
+  </p>
+  <div class="audio-container">
+  <span>
+    <button
+      class="playButton regular"
+      onclick="this.nextElementSibling.play()"
+    >
+      <i class="fas fa-play-circle audio-icon"></i>
+    </button>
+
+    <audio>
+      <source
+        src="https://s3.eu-west-2.amazonaws.com/madrasa-voice/lesson1/Les1Rec2.mp3"
+        type="audio/mp3"
+      />
+    </audio>
+חַאל (מצב), חַ'אל (דוד)
+  </span>
+  </div>
+  <p>
+עכשיו עשו את אותו דבר עם שני ביטויים נוספים, טיפה יותר ארוכים.
+ושוב - שימו לב במיוחד להגיה נכונה של האותיות ח ו-ח'
+  </p>
+  <div class="audio-container">
+  <span>
+    <button
+      class="playButton regular"
+      onclick="this.nextElementSibling.play()"
+    >
+      <i class="fas fa-play-circle audio-icon"></i>
+    </button>
+    <audio>
+      <source
+        src="https://s3.eu-west-2.amazonaws.com/madrasa-voice/Female/Nagham+(3).mp3"
+        type="audio/mp3"
+      />
+    </audio>
+אִלְחַמְדֻלִלַّה
+  </span>
+  <span>
+    <button
+      class="playButton regular"
+      onclick="this.nextElementSibling.play()"
+    >
+      <i class="fas fa-play-circle audio-icon"></i>
+    </button>
+
+    <audio>
+      <source
+        src="https://s3.eu-west-2.amazonaws.com/madrasa-voice/Female/Nagham+(13).mp3"
+        type="audio/mp3"
+      />
+    </audio>
+אַללַّה יִחַ'לִّיכּ 
+  </span>
+  <p>
+ככל שתתאמנו כך זה יהיה קל יותר!
+  </p>
+  </div>
+</div>

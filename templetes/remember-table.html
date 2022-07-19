@@ -1,0 +1,314 @@
+<style>
+// sets
+$gl-ms         : "screen and (max-width: 23.5em)"; // up to 360px
+$gl-xs         : "screen and (max-width: 35.5em)"; // up to 568px
+$gl-sm         : "screen and (max-width: 48em)";   // max 768px
+$gl-md         : "screen and (max-width: 64em)";   // max 1024px
+$gl-lg         : "screen and (max-width: 80em)";   // max 1280px
+
+.madrasa-course-content table { 
+  border-spacing: 1; 
+  border-collapse: collapse; 
+  background:white;
+  border-radius:6px;
+  overflow:hidden;
+  max-width:800px; 
+  width:100%;
+  margin:0 auto;
+  position:relative;
+  
+  * { position:relative }
+  
+.madrasa-course-content td,th { padding-left:8px}
+
+.madrasa-course-content thead tr { 
+    height:60px;
+    background:#FFED86;
+    font-size:16px;
+  }
+  
+.madrasa-course-content tbody tr { height:48px; border-bottom:1px solid #E3F1D5 ;
+    &:last-child  { border:0; }
+  }
+  
+.madrasa-course-content td,th{ 
+    text-align:left;
+		&.l{ text-align:right }
+		&.c{ text-align:center }
+		&.r{ text-align:center }
+	}
+}
+
+    .madrasa-course-content h2 {
+        font-size: 22px;
+        font-size: 30px;
+        font-weight: bold;
+        color: #244080;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .madrasa-course-content p,
+    .madrasa-course-content ul {
+        margin: 0;
+    }
+
+    .madrasa-course-content p,
+    .madrasa-course-content li,
+    .madrasa-course-content {
+        font-size: 20px;
+    }
+
+    .madrasa-course-content hr {
+        border-top: 1px solid lightgray;
+        max-width: 350px;
+        margin-right: 0;
+    }
+
+    @font-face {
+        font-family: "Abraham-light";
+        src: url("font/AbrahamTRIAL-Light.otf");
+    }
+
+    @font-face {
+        font-family: "Abraham";
+        src: url("font/AbrahamTRIAL-Regular.otf");
+    }
+
+    .madrasa-course-content h2 {
+        font-family: "Abraham";
+    }
+
+    .madrasa-course-content p,
+    .madrasa-course-content li,
+    .madrasa-course-content {
+        font-family: "Abraham-light";
+    }
+    
+    @media #{$gl-xs}  {
+  table { display:block;
+  > *,tr,td,th          { display:block }
+    thead               { display:none }
+    tbody tr            { height:auto; padding:8px 0;
+      td                { padding-left:45%; margin-bottom:12px;
+        &:last-child    { margin-bottom:0 }
+        &:before        { 
+          position:absolute;
+          font-weight:700;
+          width:40%;
+          left:10px;
+          top:0
+        }
+        
+        &:nth-child(1):before { content:"Code";}
+        &:nth-child(2):before { content:"Stock";}
+        &:nth-child(3):before { content:"Cap";}
+        &:nth-child(4):before { content:"Inch";}
+        &:nth-child(5):before { content:"Box Type";}
+      }        
+    }
+  }
+}  	
+// body style
+body               { 
+  background:#9BC86A; 
+  font:400 14px 'Calibri','Arial';
+  padding:20px;
+}
+blockquote {
+  color:white;
+  text-align:center;
+}
+
+@media only screen and (min-width:500px) {
+    .madrasa-course-content img {
+        float: left;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .madrasa-course-content h2 {
+        text-align: center;
+
+    }
+
+    .madrasa-course-content img {
+        display: block;
+        margin: auto;
+    }
+}
+</style>
+<div class="madrasa-course-content remember" style="clear:both">
+    <img src="https://madrasa-images.s3.eu-west-2.amazonaws.com/new-designs/remember.png" alt="remember"
+        width="160">
+    <h2 style="font-size:30px;font-weight:bold;color:#244080;margin-right:0;margin-bottom:20px">
+חשוב לזכור!
+    </h2>
+    <p>
+טבלת סיכום כינויי המושא
+    </p>
+
+   <table dir="rtl">
+      <thead>
+        <tr>
+            <th>
+
+            </th>
+            <th>
+כינוי מושא 
+            </th>
+            <th>
+דוגמא
+            </th>
+            <th>
+כינוי מושא אחרי תנועה ארוכה
+            </th>
+            <th>
+דוגמא
+            </th>
+        </tr>
+      <thead>
+      <tbody>
+        <tr>
+            <td>
+אותי
+            </td>
+            <td>
+-ני
+            </td>
+            <td>
+בִּ(י)זוּרְנִי - הוא מבקר אותי
+            </td>
+            <td>
+-נִי
+            </td>
+            <td>
+בִּ(י)זוּרוּנִי - הם מבקרים אותי
+            </td>
+        </tr>
+        <tr>
+            <td>
+אותךָ
+            </td>
+            <td>
+-ַכּ
+            </td>
+            <td>
+בִּ(י)זוּרַכּ - הוא מבקר אותךָ
+            </td>
+            <td>
+-כּ
+            </td>
+            <td>
+בִּ(י)זוּרוּכּ - הם מבקרים אותךָ
+            </td>
+        </tr>
+        <tr>
+            <td>
+אותךְ
+            </td>
+            <td>
+-ֵכּ
+            </td>
+            <td>
+בִּ(י)זוּרֵכּ - הוא מבקר אותךְ
+            </td>
+            <td>
+-כִּי
+            </td>
+            <td>
+בִּ(י)זוּרוּכִּי - הם מבקרים אותךְ
+            </td>
+        </tr>
+        <tr>
+            <td>
+אותו
+            </td>
+            <td>
+-ֹו
+            </td>
+            <td>
+בִּ(י)זוּרוֹ - הוא מבקר אותו
+            </td>
+            <td>
+-הְ
+            </td>
+            <td>
+בִּ(י)זוּרוּהְ - הם מבקרים אותו
+            </td>
+        </tr>
+        <tr>
+            <td>
+אותה
+            </td>
+            <td>
+-הַא
+            </td>
+            <td>
+בִּ(י)זוּרְהַא - הוא מבקר אותה
+            </td>
+            <td>
+-הַא
+            </td>
+            <td>
+בִּ(י)זוּרוּהַא - הם מבקרים אותה
+            </td>
+        </tr>
+        <tr>
+            <td>
+אותנו
+            </td>
+            <td>
+-נַא
+            </td>
+            <td>
+בִּ(י)זוּרְנַא - הוא מבקר אותנו
+            </td>
+            <td>
+-נַא
+            </td>
+            <td>
+בִּ(י)זוּרוּנַא - הם מבקרים אותנו
+            </td>
+        </tr>
+        <tr>
+            <td>
+אתכם
+            </td>
+            <td>
+-כֹּם
+            </td>
+            <td>
+בִּ(י)זוּרְכֹּם - הוא מבקר אתכם
+            </td>
+            <td>
+-כֹּם
+            </td>
+            <td>
+בִּ(י)זוּרוּכֹּם - הם מבקרים אתכם
+            </td>
+        </tr>
+        <tr>
+            <td>
+אותם
+            </td>
+            <td>
+-הֹם
+            </td>
+            <td>
+בִּ(י)זוּרְהֹם - הוא מבקר אותם
+            </td>
+            <td>
+-הֹם
+            </td>
+            <td>
+בִּ(י)זוּרוּהֹם - הם מבקרים אותם
+            </td>
+        </tr>
+      </tbody>
+    <table/>
+      
+    <blockquote> Responsive Table </blockquote>
+
+    </div>

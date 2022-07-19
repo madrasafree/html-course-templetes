@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $("#select-templete").on("change", function () {
+          $("#visual").load(this.value, function () {
+            let code = $("#visual")
+              .html()
+              .replace(/</g, "&lt;")
+              .replace(/>/g, "&gt;");
+            $("#code").html(code);
+          });
+        });
+      });
+    </script>
+  </head>
+  <body dir="rtl">
+    <h1>טמפלטים לתוכן הקורס</h1>
+
+    <select id="select-templete">
+      <option selected disabled>בחירת טמפלט</option>
+      <option value="/templetes/diving.html">צוללים עמוק</option>
+    </select>
+
+    <div id="visual"></div>
+
+    <textarea id="code" style="direction:ltr;width:100%;height:300px">
+
+    </textarea>
+  </body>
+</html>
